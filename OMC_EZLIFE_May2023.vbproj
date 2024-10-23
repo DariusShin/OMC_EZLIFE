@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6152556-1CBB-4B5A-9B02-DB4E87D11A93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OMC_EZLIFE_May2023.My.MyApplication</StartupObject>
+    <RootNamespace>OMC_EZLIFE_May2023</RootNamespace>
+    <AssemblyName>OMC_EZLIFE_May2023</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OMC_EZLIFE_May2023.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OMC_EZLIFE_May2023.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OleDb, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.7.0.0\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.Designer.vb">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminBuyerListDahsboard.Designer.vb">
+      <DependentUpon>AdminBuyerListDahsboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBuyerListDahsboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminFeedbackPage.Designer.vb">
+      <DependentUpon>AdminFeedbackPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFeedbackPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu.Designer.vb">
+      <DependentUpon>AdminMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminNewSellerRequest.Designer.vb">
+      <DependentUpon>AdminNewSellerRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNewSellerRequest.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminSellerListDashboard.Designer.vb">
+      <DependentUpon>AdminSellerListDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSellerListDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BusinessProfile.Designer.vb">
+      <DependentUpon>BusinessProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessProfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonSetControl.Designer.vb">
+      <DependentUpon>ButtonSetControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonSetControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyerComment.Designer.vb">
+      <DependentUpon>BuyerComment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerComment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyerHistory.Designer.vb">
+      <DependentUpon>BuyerHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerHistory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyerLoginSplash.Designer.vb">
+      <DependentUpon>BuyerLoginSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerLoginSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyerProfile.Designer.vb">
+      <DependentUpon>BuyerProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerProfile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyerProgress.Designer.vb">
+      <DependentUpon>BuyerProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyerReceipt.Designer.vb">
+      <DependentUpon>BuyerReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyerServices.Designer.vb">
+      <DependentUpon>BuyerServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuyerServices.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarPoolDashboard.Designer.vb">
+      <DependentUpon>CarPoolDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarPoolDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CarRentalDashboard.Designer.vb">
+      <DependentUpon>CarRentalDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarRentalDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommentControl.Designer.vb">
+      <DependentUpon>CommentControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CommentControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeedBack.Designer.vb">
+      <DependentUpon>FeedBack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowNewSellerRequest.Designer.vb">
+      <DependentUpon>FlowNewSellerRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlowNewSellerRequest.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowOutOrderHistory.Designer.vb">
+      <DependentUpon>FlowOutOrderHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlowOutOrderHistory.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowOutOrderProgress.Designer.vb">
+      <DependentUpon>FlowOutOrderProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlowOutOrderProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlowOutRequest.Designer.vb">
+      <DependentUpon>FlowOutRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlowOutRequest.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodOrderDashboard.Designer.vb">
+      <DependentUpon>FoodOrderDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FoodOrderDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmEZLifeSplash.Designer.vb">
+      <DependentUpon>frmEZLifeSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEZLifeSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="OMC_EZLifeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMC_EZLifeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="OMC_EZLifeDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMC_EZLifeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SellerAddNewService.Designer.vb">
+      <DependentUpon>SellerAddNewService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerAddNewService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellerCustomerComment.Designer.vb">
+      <DependentUpon>SellerCustomerComment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerCustomerComment.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellerNewCarPoolService.Designer.vb">
+      <DependentUpon>SellerNewCarPoolService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerNewCarPoolService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerNewCarRentalService.Designer.vb">
+      <DependentUpon>SellerNewCarRentalService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerNewCarRentalService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerNewFoodOrderingService.Designer.vb">
+      <DependentUpon>SellerNewFoodOrderingService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerNewFoodOrderingService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerNewParcelCollectingService.Designer.vb">
+      <DependentUpon>SellerNewParcelCollectingService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerNewParcelCollectingService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerOrder.Designer.vb">
+      <DependentUpon>SellerOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticsDashboard.Designer.vb">
+      <DependentUpon>StatisticsDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main Menu.Designer.vb">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OrgChartPage.Designer.vb">
+      <DependentUpon>OrgChartPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrgChartPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParcelDeliveryDashboard.Designer.vb">
+      <DependentUpon>ParcelDeliveryDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParcelDeliveryDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellerMain_Menu.Designer.vb">
+      <DependentUpon>SellerMain_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerMain_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerSignUp.Designer.vb">
+      <DependentUpon>SellerSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyerSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyerSignUp.Designer.vb">
+      <DependentUpon>BuyerSignUp.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServicePayment.Designer.vb">
+      <DependentUpon>ServicePayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpChoice.Designer.vb">
+      <DependentUpon>SignUpChoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpChoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test1.Designer.vb">
+      <DependentUpon>test1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.vb">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisaPaymentPage.Designer.vb">
+      <DependentUpon>VisaPaymentPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VisaPaymentPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBuyerListDahsboard.resx">
+      <DependentUpon>AdminBuyerListDahsboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFeedbackPage.resx">
+      <DependentUpon>AdminFeedbackPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainMenu.resx">
+      <DependentUpon>AdminMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNewSellerRequest.resx">
+      <DependentUpon>AdminNewSellerRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSellerListDashboard.resx">
+      <DependentUpon>AdminSellerListDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessProfile.resx">
+      <DependentUpon>BusinessProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonSetControl.resx">
+      <DependentUpon>ButtonSetControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerComment.resx">
+      <DependentUpon>BuyerComment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerHistory.resx">
+      <DependentUpon>BuyerHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerLoginSplash.resx">
+      <DependentUpon>BuyerLoginSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerProfile.resx">
+      <DependentUpon>BuyerProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerProgress.resx">
+      <DependentUpon>BuyerProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerReceipt.resx">
+      <DependentUpon>BuyerReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerServices.resx">
+      <DependentUpon>BuyerServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarPoolDashboard.resx">
+      <DependentUpon>CarPoolDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarRentalDashboard.resx">
+      <DependentUpon>CarRentalDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentControl.resx">
+      <DependentUpon>CommentControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack.resx">
+      <DependentUpon>FeedBack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowNewSellerRequest.resx">
+      <DependentUpon>FlowNewSellerRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowOutOrderHistory.resx">
+      <DependentUpon>FlowOutOrderHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowOutOrderProgress.resx">
+      <DependentUpon>FlowOutOrderProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowOutRequest.resx">
+      <DependentUpon>FlowOutRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodOrderDashboard.resx">
+      <DependentUpon>FoodOrderDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEZLifeSplash.resx">
+      <DependentUpon>frmEZLifeSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerAddNewService.resx">
+      <DependentUpon>SellerAddNewService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerCustomerComment.resx">
+      <DependentUpon>SellerCustomerComment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerNewCarPoolService.resx">
+      <DependentUpon>SellerNewCarPoolService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerNewCarRentalService.resx">
+      <DependentUpon>SellerNewCarRentalService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerNewFoodOrderingService.resx">
+      <DependentUpon>SellerNewFoodOrderingService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerNewParcelCollectingService.resx">
+      <DependentUpon>SellerNewParcelCollectingService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerOrder.resx">
+      <DependentUpon>SellerOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsDashboard.resx">
+      <DependentUpon>StatisticsDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menu.resx">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrgChartPage.resx">
+      <DependentUpon>OrgChartPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParcelDeliveryDashboard.resx">
+      <DependentUpon>ParcelDeliveryDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerMain_Menu.resx">
+      <DependentUpon>SellerMain_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerSignUp.resx">
+      <DependentUpon>SellerSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyerSignUp.resx">
+      <DependentUpon>BuyerSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicePayment.resx">
+      <DependentUpon>ServicePayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpChoice.resx">
+      <DependentUpon>SignUpChoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test1.resx">
+      <DependentUpon>test1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisaPaymentPage.resx">
+      <DependentUpon>VisaPaymentPage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OMC_EZLifeDataSet.xsc">
+      <DependentUpon>OMC_EZLifeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OMC_EZLifeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMC_EZLifeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OMC_EZLifeDataSet.xss">
+      <DependentUpon>OMC_EZLifeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OMC_EZLifeDataSet1.xsc">
+      <DependentUpon>OMC_EZLifeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OMC_EZLifeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMC_EZLifeDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMC_EZLifeDataSet1.xss">
+      <DependentUpon>OMC_EZLifeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZLIFE_Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[removal.ai]_tmp-648ee6a305f16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userDefaultImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-blind-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reset-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-uninstalling-updates-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-conference-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-red-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-green-circle-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-red-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-blue-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-black-circle-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasterCard_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visaLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29175138_responsive_web_design_15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26234278_7178884.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online Services.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online Services 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car Pooling.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car Pooling 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car Rental.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car Rental 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food Ordering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food Ordering 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parcel Collecting 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online Services 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parcel Colllecting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default Car Photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default Food Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Removal-666.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-32 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-half-empty-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-register-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buyer-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-seller-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-feedback-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-uninstalling-updates-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reset-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buying-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23211-receive-order-unscreen1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reset-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sync-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lease-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-send-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-property-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-card-payment-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refreshments-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-80 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tools-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-status-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-history-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-about-us-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-letter-with-email-sign-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ORG CHART1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-parcel-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Removal-372.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-analysis-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-manager-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-create-document-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-create-document-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minus-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cash On Delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisaMasterCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkmark-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Services Provider.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-40 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\packaging-for-delivery.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RevenueIcon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transaction Animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit Card Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit Card Chip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-asia-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-team-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-team-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Darius11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Darius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nazrul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Melvin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaplin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Syazmy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hakim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chevron-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OMC_EZLife.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\icons8-approval-40 %281%29.png" />
+    <None Include="Resources\icons8-approval-40.png" />
+    <None Include="Resources\icons8-add-32.png" />
+    <None Include="Resources\icons8-delete-32.png" />
+    <None Include="Resources\Removal-114.png" />
+    <None Include="Resources\Removal-703.png" />
+    <None Include="Resources\EmptyService.png" />
+    <None Include="Resources\icons8-history-50.png" />
+    <None Include="Resources\icons8-feedback-24.png" />
+    <None Include="Resources\icons8-txt-24.png" />
+    <None Include="Resources\icons8-update-24.png" />
+    <None Include="Resources\NasiGoreng.jpg" />
+    <None Include="Resources\icons8-parcel-100 %281%29.png" />
+    <None Include="Resources\icons8-receipt-24.png" />
+    <None Include="Resources\icons8-password-32 %281%29.png" />
+    <None Include="Resources\icons8-male-user-32.png" />
+    <None Include="Resources\icons8-search-40.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
